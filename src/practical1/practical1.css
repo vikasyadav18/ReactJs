@@ -1,1 +1,40 @@
+ /* *{
+    padding: 0;margin: 0;box-sizing: border-box;
+ } */
  
+#root
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ .classDiv ,.FunctionDiv
+ {
+     width: 32rem;
+     border: 0px solid black;
+     display: flex;
+     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+ }
+.classDiv
+{
+    border-radius: 10px;
+    background: linear-gradient(to right,rgb(216, 220, 231),rgb(52, 153, 236));
+}
+.FunctionDiv
+{
+    background:linear-gradient(to right,white ,pink);
+    border-radius: 10px;
+}
+
+.classDiv p 
+{
+      color: red;
+      font-size: larger;
+
+}
