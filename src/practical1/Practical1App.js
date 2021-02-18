@@ -7,8 +7,9 @@ function Practical1App()
 {
     return(
         <>
-        <ClassComponent/>
          <FunctionComponent/>
+        <ClassComponent/>
+        
          </>   
     );
 }

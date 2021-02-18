@@ -28,13 +28,20 @@
 }
 .FunctionDiv
 {
-    background:linear-gradient(to right,white ,pink);
+    background-color:pink;
     border-radius: 10px;
 }
 
-.classDiv p 
+.classDiv p ,.FunctionDiv p
 {
       color: red;
-      font-size: larger;
+      font-size:x-large;
 
+}
+.classDiv span , .FunctionDiv span
+{
+    padding: 5px;
+    color: blue;
+    background-color: yellow;
+    border-radius: 10px;
 }
