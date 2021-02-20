@@ -1,45 +1,64 @@
-import React from 'react'
-import boys from './image/boys.jpg';
-import dark from './image/dark.jpg';
-import strengerthings from './image/strenger things.jpg';
-import sweethome from './image/sweet home.jpg';
+
 import './Cardcss.css';
 import Card from './Card';
+import CardArray from './CardArray';
 
+function FunctionName(nValue)
+{
+    // console.log(nValue);
+    return(
+        <Card
+        imgsrc={nValue.imgsrc}
+        title={nValue.title}
+        sname={nValue.sname}
+        link={nValue.link}
+        />
+    );
+
+    
+}
 
 export default function WebApp() {
     return (
+        <>
+         <div className="heading">
+         <h1 >LIST OF TOP 4 WEB SERIES</h1>
+         </div>
+        {CardArray.map(FunctionName)}
+       
         
-                [
-                     <div className="heading">
-                     <h1 >LIST OF TOP 4 WEB SERIES</h1>
-                     </div>,
-              
-                     <Card
-                      imgsrc={boys}
-                      title="An Amazon Web Series"
-                      sname="BOYS"
-                      link="https://www.youtube.com/watch?v=tcrNsIaQkb4"
-                     />,
-                     <Card
-                      imgsrc={dark}
-                      title="A Netflix Original Series"
-                      sname="DARK"
-                      link="https://www.youtube.com/watch?v=cq2iTHoLrt0"
-                     />,
-                     <Card
-                      imgsrc={strengerthings}
-                      title="A Netflix Original Series"
-                      sname="Stranger Things"
-                      link="https://www.youtube.com/watch?v=b9EkMc79ZSU"
-                     />,
-                     <Card
-                      imgsrc={sweethome}
-                      title="A Netflix Original Series"
-                      sname="Sweet Home"
-                      link="https://www.youtube.com/watch?v=7rI56NmD33Y"
-                     />
-                 ]
+{/*  ------------Simply Picking Array Elements---------- 
+<Card
+             imgsrc={CardArray[0].imgsrc}
+             title={CardArray[0].title}
+             sname={CardArray[0].sname}
+             link={CardArray[0].link}
+             /> */}
+               
+                {/* <Card
+                imgsrc={CardArray[1].imgsrc}
+                title={CardArray[1].title}
+                sname={CardArray[1].sname}
+                link={CardArray[1].link}
+                />
+                <Card
+                imgsrc={CardArray[2].imgsrc}
+                title={CardArray[2].title}
+                sname={CardArray[2].sname}
+                link={CardArray[2].link}
+                />
+                <Card
+                imgsrc={CardArray[3].imgsrc}
+                title={CardArray[3].title}
+                sname={CardArray[3].sname}
+                link={CardArray[3].link}
+                /> */}
+
+
+
+        </>      
+            
+                     
         
     );
 }
