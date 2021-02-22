@@ -17,7 +17,7 @@ const [a,functionName]=useState(300);
         <h1 className="counter">{a}</h1>
         <img className="img" src={"https://picsum.photos/200/"+(a).toString()} alt=""/>
         
-        <button className="btn" onMouseOverCapture={Increase}>Click Me</button>
+        <button className="btn" onMouseOverCapture={Increase}>Pass Cursor on me</button>
        
         {/* {console.log(a)} */}
         </>

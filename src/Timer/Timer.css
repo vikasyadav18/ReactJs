@@ -1,0 +1,19 @@
+
+
+.btn
+{
+    border: 3px solid white;
+    padding: 15px 80px;
+    background-color: rgb(209, 12, 209);
+    color: aliceblue;
+    cursor: pointer; 
+    outline: none;   
+}
+body{
+    background-color: rgb(147, 196, 238);
+    
+}
+.img{
+    height: 400px;
+    width: 400px;
+}
