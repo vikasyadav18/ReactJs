@@ -1,4 +1,6 @@
-
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
 
 .btn
 {
@@ -10,7 +12,10 @@
     outline: none;   
 }
 body{
-    background-color: rgb(147, 196, 238);
+    display: flex;
+    justify-content: center;
+
+    /* background-color: rgb(147, 196, 238); */
     
 }
 .img{

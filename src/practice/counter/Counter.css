@@ -14,7 +14,10 @@
     outline: none;   
 }
 body{
-    background-color: rgb(147, 196, 238);
+    background-color: rgb(219, 240, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .img{
