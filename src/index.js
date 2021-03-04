@@ -11,11 +11,12 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 //import Counter from './practical2/Counter'
 //import FuntionProps from './practice/Props and States/FuntionProps';
 
-import Button from './practice/Bootstrap/Button';
+//import Button from './practice/Bootstrap/Button';
+import Cards from './practice/Bootstrap/Cards';
 
 ReactDOM.render( 
                <>
-        <Button/>
+        <Cards/>
             </>
               ,document.getElementById('root')
             );
