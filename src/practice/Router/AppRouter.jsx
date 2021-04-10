@@ -1,9 +1,9 @@
-import react from 'react';
-import {Route,Switch} from 'react-router-dom';
+import React from 'react';
+import {Route,Switch, useHistory, useLocation} from 'react-router-dom';
 import About from './About';
 import Contact from './Contact';
 import NavBar from './NavBar';
-
+import Url from "./Url";
 const AppRouter=()=>{
 
 const Error=()=>{
@@ -12,13 +12,31 @@ const Error=()=>{
     );
 }
 
+const history=useHistory();
+
     return(
             <>
+
             <NavBar/>
+           {true?(<button onClick={()=>history.push("/")}>Home</button>):(null)}
            <Switch>
-               <Route exact path="/" component={About} />
-               <Route path="/contact" component={Contact}/>
-               <Route path="" component={Error}/>
+               <Route 
+               exact 
+               path="/" 
+               component={()=><About name="ABOUT"/>} />
+
+               <Route 
+               path="/contact" 
+               render={()=><Contact name="CONTACT"/>}/>
+           
+                {/*--------- useParams---------- */}
+
+                <Route 
+                path="/url/:fname/:lname" 
+                component={Url}/>
+            
+            <Route component={Error}/>
+
            </Switch>
                 
 

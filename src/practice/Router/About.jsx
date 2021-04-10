@@ -1,11 +1,11 @@
 import React from 'react';
 import './NavBar.css';
-const About =()=>{
+const About =(props)=>{
     return(
 
         <>
         {/* <button className="btn">Click me</button> */}
-        <h1>This is About Page</h1>
+        <h1>This is {props.name} Page</h1>
         </>
     );
 }
