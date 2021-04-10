@@ -1,15 +1,10 @@
-
 import './Cardcss.css';
-
 function Card(props)
-{    
-   
+{       
     return(
         <>
-     
-
     <div className="cards">
-        <div className="card">
+            <div className="card">
             <img src={props.imgsrc} alt="mypic" className="Card_img"/>
 
             <div className="card_info">
@@ -21,12 +16,8 @@ function Card(props)
             </div>
         </div>
     </div>
-    
-   
     </>
     );
 }
-
-
 
 export default Card; 

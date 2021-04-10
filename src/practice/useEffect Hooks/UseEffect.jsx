@@ -4,13 +4,21 @@ const UseEffect=()=>{
 
     const [Num1, setNum1] = useState(0);
     const [Num2, setNum2] = useState(0);
+    const [Num3, setNum3] = useState(0);
 
     useEffect(()=>{
-        if(Num1==1)
+        
         alert("i am clicked | take me as an Api");
         console.log("I am clicked");
+        document.title=`You Click me 🚗 ${Num1}`;
 
-    },[Num1]);
+    },[Num1,Num2]);
+
+   const Test=()=>{
+       alert("Hey 👽")
+       setNum3(Num3+1);
+   }
+
 
     return(
         <>
@@ -29,7 +37,11 @@ const UseEffect=()=>{
         }}
         >Click me 2 {Num2} 🥈</button>
 
+        <br/>
+        <button onClick={Test} className="btn mt-4 ml-4">I will not Update = {Num3} </button>
+
         </>
+
     );
 }
 

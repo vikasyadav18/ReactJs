@@ -1,4 +1,3 @@
-import React from 'react'
 import boys from './image/boys.jpg';
 import dark from './image/dark.jpg';
 import strengerthings from './image/strenger things.jpg';

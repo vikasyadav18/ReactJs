@@ -25,21 +25,21 @@ const FuntionProps=()=>{
 return(
     <>
     <h1 style={{cursor:'pointer'}} onClick={Go}>{val}</h1>
+
     <PropsValue 
-    name="vikas"
-    classN={12}
-    school="ss"    
-    />
+        name="vikas"
+        classN={12}
+        school="ss"/>
+
     <PropsValue
-    name="vinod"
-    classN={14}
-    school="sx"    
-    />
+        name="vinod"
+        classN={14}
+        school="sx"/>
+
     <PropsValue
-    name="vino"
-    classN={18}
-    school="hh"    
-    />
+        name="vino"
+        classN={18}
+        school="hh"/>
     </>
 );
 

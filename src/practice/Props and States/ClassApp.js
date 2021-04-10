@@ -14,5 +14,4 @@ function ClassApp()
             );
         }
     
-
 export default ClassApp;

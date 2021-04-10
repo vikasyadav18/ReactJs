@@ -22,7 +22,6 @@ constructor(props)
 });
 };
 
-
     render()
         {
             return(
