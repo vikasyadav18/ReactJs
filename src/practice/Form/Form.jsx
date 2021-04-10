@@ -31,7 +31,7 @@ const Form=()=>{
         <h1>Hello {fname}{" "}{lname}</h1>
         <input type="text" placeholder="Enter First name" onChange={UpdateFname}/>
         <input type="text"  placeholder="Enter last name" onChange={UpdateLname}/>
-        <input type="text" />
+        <input type="text" placeholder="enter roll" onChange=/>
         <button onClick={Update}>submit</button>
         <i class="fa fa-plus" aria-hidden="true"></i>
         </div>
