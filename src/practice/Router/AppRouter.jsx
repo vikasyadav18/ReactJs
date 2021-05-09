@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route,Switch, useHistory, useLocation} from 'react-router-dom';
+import {Route,Switch, useHistory} from 'react-router-dom';
 import About from './About';
 import Contact from './Contact';
 import NavBar from './NavBar';

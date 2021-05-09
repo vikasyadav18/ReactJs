@@ -10,7 +10,7 @@ const arr=[{name:'vikas1',class:'10'},
 const FunctionName=(e)=>{
     return(
         <>
-        <h1>{e.name}</h1>
+        <h1>{e.name}{"----"+e.class}</h1>
 
         </>
     );

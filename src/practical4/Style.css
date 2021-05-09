@@ -1,0 +1,46 @@
+.navbar-nav a
+{
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+.container
+{
+    display: ;
+    position:absolute;
+}
+ h1
+{
+    font-size: 80px;
+}
+input
+{
+    display: block;
+    width: 80%;
+}
+
+
+.checked
+{
+    display: flex;
+    justify-content: left;
+    position: relative;
+    width: 200px;
+    height: ;
+    border: 0px solid;
+}
+input[type='checkbox']
+{
+    position:relative ;
+ left: -50px;
+ top: 10px; 
+
+ 
+}
+.checked label
+{
+    position: relative;
+    left: -70px;
+    width: 90%;
+    height: 20px;
+}
