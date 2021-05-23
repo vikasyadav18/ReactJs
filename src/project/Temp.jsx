@@ -43,7 +43,7 @@ useEffect(()=>
             setData(json.main)
             setName(json.name)
             setVisibility(json.visibility)
-            setWeather(json.weather)
+            setWeather(json.weather[0])
             setWind(json.wind)
         })
 
@@ -52,14 +52,6 @@ useEffect(()=>
     
     Api();
 },[citySearch])
-
-
-
-
-
-
-
-
 
     return(
 
@@ -75,17 +67,17 @@ useEffect(()=>
                 <div>
       
                      {/* <input type="search" onChange={(e)=>{setSearch(e.target.value)}}/> */}
-                    <input type="search" placeholder="enter city name" onChange={(e)=>val=e.target.value}/>
+                    <input type="search" placeholder="enter place name " onChange={(e)=>val=e.target.value}/>
 
                      <button className="btn" onClick={Update}>Search</button>
                      <br />
                      {/* <pre>{JSON.stringify(data,null,1)}</pre> */}
                      <h1>{cityName} || {data.temp}°cel🌡️</h1> <br />
                      <div className="ExtraData">
-                        <h5>min:{data.temp_min}°cel || max:{data.temp_max}°cel</h5>
-                        <h5>humidity:{data.humidity} || wind-Speed:{wind.speed}</h5>
-                        <h5>feels_like:{data.feels_like} || sky_description:{weather.description}</h5>
-                        <h5>pressure:{data.pressure} || visibility:{visibility}</h5>
+                        <h6>min:{data.temp_min}°cel || max:{data.temp_max}°cel</h6>
+                        <h6>humidity:{data.humidity} || wind-Speed:{wind.speed}</h6>
+                        <h6>feels_like:{data.feels_like} || sky_description:{weather.description}</h6>
+                        <h6>pressure:{data.pressure} || visibility:{visibility}</h6>
                      </div>
                      {/* {data.map((FunctionCall))} */}
 
