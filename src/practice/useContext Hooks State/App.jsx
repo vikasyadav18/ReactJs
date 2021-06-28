@@ -16,7 +16,6 @@ import CompA from './CompA';
 const FirstName=createContext();
 const LastName=createContext();
 const App=()=>{
-
     return(
         <>
         <FirstName.Provider value={"kamnu"}>

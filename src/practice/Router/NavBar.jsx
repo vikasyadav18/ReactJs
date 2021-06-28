@@ -18,7 +18,8 @@ return(
     </div> 
 
     <a href="/">About Page</a>
-    <a href="/contact">Contact</a> <span style={{color:"red"}}> &#8592;  this is using anchor tag : this will reload the whole page  </span>
+    <a href="/contact">Contact</a> 
+    <span style={{color:"red"}}> &#8592;  this is using anchor tag : this will reload the whole page  </span>
 
     </>
     );

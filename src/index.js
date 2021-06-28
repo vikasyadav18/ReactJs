@@ -4,13 +4,14 @@ import ReactDOM from 'react-dom';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 //import App from './App';
-import FetchApi from './practice/ApiFetch/FetchApi';
-import Practice from './practice/ApiFetch/Practice';
+//import FetchApi from './practice/ApiFetch/FetchApi';
+//import Practice from './practice/ApiFetch/Practice';
+//import AppRouter from './practice/Router/AppRouter';
 // import WeatherApi from './practice/ApiFetch/WeatherApi';
 // import ClockDate from './practice/ClockDate';
 // import AutomaticTime from './practice/Timer/AutomaticTime';
 // import Timer from './practice/Timer/Timer';
-import Temp from './project/Temp';
+//import Temp from './project/Temp';
 //import UseEffect from './practice/useEffect Hooks/UseEffect';
 //import App from './practice/useContext Hooks State/App';
 //import NpmClock from './practice/npm Project/NpmClock';
@@ -29,19 +30,23 @@ import Temp from './project/Temp';
 //import AppRouter from './practice/Router/AppRouter';
 //import {BrowserRouter} from 'react-router-dom';
 //import App4 from './practical4/App4';
-
+import Counter from './practice/counter/Counter';
+import CountAndPlay from './practice/counter/CountAndPlay';
 ReactDOM.render( 
                <>
-               {/* <BrowserRouter>
-               <App4/>
-               </BrowserRouter> */}
+{/*-------------------- for Route component always render component inside of this <BrowserRouter>---------------------------- */}
+                {/* <BrowserRouter>
+               <AppRouter/>
+               </BrowserRouter>  */}
 
-<Temp/>
+
         {/* <FetchApi/> */}
         {/* <WeatherApi/> */}
         {/* <Practice/> */}
         {/* <AutomaticTime/> */}
         {/* <ClockDate/> */}
+        {/* <Temp/> */}
+        <CountAndPlay/>
             </>
               ,document.getElementById('root')
             );

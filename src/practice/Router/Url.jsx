@@ -2,8 +2,8 @@ import React from 'react';
 import {useHistory, useLocation, useParams} from 'react-router-dom';
 const Url=()=>{
     const location=useLocation();
-    const { fname ,lname} = useParams();
     const history=useHistory();
+    const { fname ,lname} = useParams();
 console.log(location);
 console.log(history);
 

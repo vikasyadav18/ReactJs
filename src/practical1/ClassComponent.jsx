@@ -12,6 +12,7 @@ class ClassComponent extends React.Component
             </div>
         </React.Fragment>
         );
+        
     }
 }
 

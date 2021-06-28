@@ -7,4 +7,5 @@ const CompB=()=>{
         </>
     );
 }
+
 export default CompB;

@@ -12,4 +12,5 @@ const CompC2pro=()=>{
         </>
     );
 }
+
 export default CompC2pro;

@@ -22,4 +22,5 @@ const CompC=()=>{
 
     );
 }
+
 export default CompC;
